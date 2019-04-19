@@ -5,14 +5,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "run-p serve copy sass",
-    "serve": "node ./server.js",
+    "start": "run-p serve",
+    "serve": "webpack-dev-server --config webpack.dev.js",
     "test": "run-p lint:css",
-    "lint:css": "stylelint './src/scss/**/*.scss'",
-    "prettier": "prettier --write './src/scss/**/*.scss'",
-    "copy": "run-p copy:*",
-    "copy:html": "cpx 'src/html/*.html' dist --watch",
-    "sass": "sass --load-path=node_modules --watch ./src/scss/index.scss dist/css/index.css"
+    "lint:css": "stylelint './src/scss/**/*.scss'"
   },
   "husky": {
     "hooks": {
@@ -20,17 +16,28 @@
     }
   },
   "devDependencies": {
-    "cpx": "^1.5.0",
+    "copy-webpack-plugin": "^5.0.2",
+    "css-loader": "^2.1.1",
     "express": "^4.16.4",
+    "fibers": "^3.1.1",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^1.3.1",
+    "mini-css-extract-plugin": "^0.6.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0",
     "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
     "stylelint": "^10.0.1",
-    "stylelint-config-standard": "^18.3.0"
+    "stylelint-config-standard": "^18.3.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.4",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
+    "moveto": "^1.8.0",
     "sanitize.css": "^8.0.0"
   }
 }
