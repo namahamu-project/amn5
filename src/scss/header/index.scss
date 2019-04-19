@@ -1,0 +1,22 @@
+@import '../mixins/break_point.scss';
+@import '../variables/layout.scss';
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  padding: 0 25px;
+  z-index: 9999;
+
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $main-max-width;
+    margin: 0 auto;
+  }
+}

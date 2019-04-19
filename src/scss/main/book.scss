@@ -1,0 +1,9 @@
+@import '../variables/color.scss';
+
+.book {
+  position: relative;
+
+  &.book2 {
+    background-color: $primary-color;
+  }
+}
