@@ -23,7 +23,6 @@
   .member__title {
     margin: 0 0 20px;
     color: $gray-color;
-    font-size: 1.4rem;
   }
 
   .member__authors {
@@ -45,6 +44,11 @@
 
       .content__prof-img {
         width: 60%;
+        max-width: 200px;
+
+        @include media-pc {
+          max-width: 100%;
+        }
       }
 
       .content__name {
@@ -59,7 +63,6 @@
         margin: 0 0 20px;
         color: $blue-color;
         font-size: 1.2rem;
-        font-weight: 400;
       }
 
       .content__sns {

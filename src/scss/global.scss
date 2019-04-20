@@ -4,4 +4,26 @@ html {
 
 body {
   font-size: 1.4rem; // =14px
+  font-family: 'TsukuGoPr5-M', -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
+    'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text--bold {
+  font-weight: 600;
+  font-family: 'TsukuGoPro-B', -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
+    'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+}
+
+.text--en {
+  font-family: 'FuturaLTPro-Heavy', -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
+    'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
 }
