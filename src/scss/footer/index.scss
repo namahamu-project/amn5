@@ -3,14 +3,15 @@
 
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
   padding: 10px 0;
   text-align: center;
   border: 5px solid $black-color;
   border-top: none;
+  border-bottom: none;
   background-color: $black-color;
 
   .footer__content {
