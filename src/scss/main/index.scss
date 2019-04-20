@@ -1,7 +1,6 @@
 @import './hero.scss';
 @import './about.scss';
 @import './book.scss';
-@import '../mixins/break_point.scss';
 @import '../variables/layout.scss';
 
 .main {
@@ -15,10 +14,7 @@
 
   .main__content {
     width: 100%;
+    max-width: $main-max-width;
     margin: 0 auto;
-
-    @include media-pc {
-      max-width: $main-max-width;
-    }
   }
 }

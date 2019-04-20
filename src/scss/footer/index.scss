@@ -1,20 +1,24 @@
-@import '../mixins/break_point.scss';
 @import '../variables/layout.scss';
+@import '../variables/color.scss';
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
-  padding-bottom: 25px;
+  padding: 10px 0;
   text-align: center;
-  border: 5px solid #000;
+  border: 5px solid $black-color;
   border-top: none;
+  border-bottom: none;
+  background-color: $black-color;
 
   .footer__content {
     width: 100%;
+    max-width: $main-max-width;
     margin: 0 auto;
-
-    @include media-pc {
-      max-width: $main-max-width;
-    }
+    color: $white-color;
+    font-size: 0.8rem;
   }
 }
