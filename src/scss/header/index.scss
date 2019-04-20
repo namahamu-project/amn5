@@ -9,11 +9,11 @@
   left: 0;
   width: 100%;
   height: $header-height;
-  padding: 5px 15px;
+  padding: 5px 15px 0;
   z-index: 9999;
 
   @include media-pc {
-    padding: 5px 25px;
+    padding: 5px 25px 0;
   }
 
   .header__content {
