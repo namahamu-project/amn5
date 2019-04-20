@@ -1,3 +1,105 @@
+@import '../variables/color.scss';
+@import '../variables/layout.scss';
+
 .member {
   position: relative;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @include media-pc {
+    padding-bottom: 130px;
+  }
+
+  .member__nmhmlogo {
+    width: 50%;
+    margin-bottom: 60px;
+
+    @include media-pc {
+      width: 40%;
+      margin-bottom: 90px;
+    }
+  }
+
+  .member__title {
+    margin: 0 0 20px;
+    color: $gray-color;
+    font-size: 1.4rem;
+  }
+
+  .member__authors {
+    margin: 0 auto 130px;
+
+    @include media-pc {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row-reverse;
+      max-width: 800px;
+    }
+
+    .authors__content {
+      margin-bottom: 60px;
+
+      @include media-pc {
+        margin-bottom: 0;
+      }
+
+      .content__prof-img {
+        width: 60%;
+      }
+
+      .content__name {
+        margin: 20px 0 5px;
+        padding-left: 0.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 0.35rem;
+      }
+
+      .content__name-ruby {
+        margin: 0 0 20px;
+        color: $blue-color;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+
+      .content__sns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .member__designer {
+    .designer__name {
+      margin: 20px 0;
+      padding-left: 0.5rem;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.35rem;
+    }
+
+    .designer__sns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.sns-icon {
+  .icon__img {
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
 }
