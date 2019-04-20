@@ -1,9 +1,125 @@
+@import '../mixins/break_point.scss';
 @import '../variables/color.scss';
+@import '../variables/layout.scss';
 
 .book {
   position: relative;
+  padding: 60px 30px;
 
-  &.book2 {
+  &.book--sikaitenka {
+    background-color: rgba(1, 2, 2, 0.88);
+  }
+
+  &.book--book2 {
     background-color: $primary-color;
+  }
+
+  .book__content {
+    display: flex;
+    flex-direction: column;
+    max-width: $main-max-width;
+    margin: 0 auto;
+
+    @include media-pc {
+      flex-direction: row;
+    }
+  }
+}
+
+.book-content {
+  .book-content__image {
+    flex-basis: 100%;
+
+    @include media-pc {
+      min-width: 250px;
+      flex-basis: 40%;
+    }
+
+    > img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.book-details {
+  flex-grow: 1;
+  margin-top: 25px;
+  margin-left: 0;
+  color: $white-color;
+
+  @include media-pc {
+    margin-top: 0;
+    margin-left: 25px;
+  }
+
+  .book-details__new {
+    color: $blue-color;
+    font-weight: 600;
+  }
+
+  .book-details__title {
+    margin: 10px 0 0;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .book-details__subtitle {
+    margin: 5px 0 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .book-details__description {
+    margin: 25px 0 0;
+    font-size: 1.3rem;
+    line-height: 1.75;
+
+    .book-details__description__heading {
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .book-details__price {
+    position: relative;
+    margin: 25px 0 0;
+    padding-left: 15px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background-color: white;
+    }
+  }
+
+  .book-details__sample {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 25px -37.5px 0;
+
+    @include media-pc {
+      margin: 25px -7.5px 0;
+    }
+
+    .book-details__sample__image {
+      margin: 0 7.5px;
+
+      > img {
+        width: 100%;
+        height: auto;
+
+        @include media-pc {
+          max-width: 120px;
+        }
+      }
+    }
   }
 }
