@@ -1,6 +1,7 @@
 const path = require('path');
 const sass = require('sass');
 const fiber = require('fibers');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -51,6 +52,13 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-source-map',
   plugins: [
+    new CopyWebpackPlugin([
+      {
+        context: path.join(__dirname, 'fixtures'),
+        from: '**/*',
+        to: `${dist}/amn5`
+      }
+    ]),
     new HtmlWebpackPlugin({
       template: path.join(src, '/html/index.html')
     }),

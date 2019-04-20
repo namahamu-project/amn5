@@ -9,8 +9,12 @@
   left: 0;
   width: 100%;
   height: $header-height;
-  padding: 0 25px;
+  padding: 5px 15px;
   z-index: 9999;
+
+  @include media-pc {
+    padding: 5px 25px;
+  }
 
   .header__content {
     display: flex;
@@ -18,5 +22,65 @@
     width: 100%;
     max-width: $main-max-width;
     margin: 0 auto;
+  }
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+
+  .header-title__logo {
+    height: 40px;
+  }
+
+  .header-title__event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 0 -3px 8px;
+  }
+}
+
+.event-details {
+  .event-details__name {
+    font-size: 1rem;
+  }
+
+  .event-details__circle {
+    font-weight: 600;
+
+    .event-details__circle__no {
+      font-size: 2.2rem;
+      letter-spacing: 0.25rem;
+    }
+
+    .event-details__circle__name {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.header-tweet {
+  width: 30px;
+  align-self: flex-end;
+
+  @include media-pc {
+    width: 65px;
+    align-self: center;
+  }
+
+  .header-tweet__btn {
+    height: 30px;
+    background-image: url('/amn5/image/tweet_btn_m.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+
+    @include media-pc {
+      height: 22px;
+      background-image: url('/amn5/image/tweet_btn.svg');
+      background-position: center;
+    }
   }
 }
