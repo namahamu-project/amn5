@@ -1,3 +1,4 @@
+import 'lazysizes';
 import MoveTo from 'moveto';
 import '../scss/index.scss';
 
