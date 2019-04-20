@@ -28,6 +28,13 @@
 .header-title {
   display: flex;
   align-items: center;
+  transform: scale(0.9);
+  transform-origin: left center;
+  transition: transform 0.2s ease-out;
+
+  @include media-pc {
+    transform: scale(1);
+  }
 
   .header-title__logo {
     height: 40px;
@@ -76,11 +83,17 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
 
     @include media-pc {
       height: 22px;
       background-image: url('/amn5/image/tweet_btn.svg');
       background-position: center;
+    }
+
+    &:hover {
+      opacity: 0.4;
     }
   }
 }
