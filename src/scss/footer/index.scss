@@ -7,18 +7,16 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  padding: 10px 0;
+  padding-bottom: 15px;
   text-align: center;
   border: 5px solid $black-color;
   border-top: none;
-  border-bottom: none;
-  background-color: $black-color;
 
   .footer__content {
     width: 100%;
     max-width: $main-max-width;
     margin: 0 auto;
-    color: $white-color;
+    color: $black-color;
     font-size: 0.8rem;
   }
 }

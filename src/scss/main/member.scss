@@ -12,10 +12,11 @@
 
   .member__nmhmlogo {
     width: 50%;
-    margin-bottom: 60px;
+    margin: -0.5px 0 60px;
 
     @include media-pc {
       width: 40%;
+      max-width: 300px;
       margin-bottom: 90px;
     }
   }
