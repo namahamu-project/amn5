@@ -5,8 +5,16 @@ import '../scss/index.scss';
 
 /* back to top */
 const trigger = document.getElementsByClassName('back-to-top')[0];
-const target = document.documentElement || document.body;
-const calcScrollTop = () => target.scrollTop || 0;
+const { documentElement, body } = document;
+const calcScrollTop = () => {
+  if (documentElement != null && documentElement.scrollTop > 0) {
+    return documentElement.scrollTop;
+  }
+  if (body != null && body.scrollTop > 0) {
+    return body.scrollTop;
+  }
+  return 0;
+};
 
 document.addEventListener('scroll', () => {
   const scrollTop = calcScrollTop();
