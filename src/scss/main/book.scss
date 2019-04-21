@@ -8,6 +8,17 @@
 
   @include media-pc {
     padding: 120px 30px;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    &.book--sikaitenka {
+      background-image: url('/amn5/image/sikaitenka_bg.png');
+    }
+
+    &.book--amn5 {
+      background-image: url('/amn5/image/amn5_bg.png');
+    }
   }
 
   &.book--sikaitenka {
@@ -86,6 +97,7 @@
       margin-bottom: 5px;
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
+      line-height: 1;
     }
   }
 
@@ -123,10 +135,10 @@
         height: auto;
 
         @include media-pc {
-          max-width: 120px;
+          max-width: 100px;
 
           &[data-is-horizon='true'] {
-            max-width: 150px;
+            max-width: 130px;
           }
         }
       }
