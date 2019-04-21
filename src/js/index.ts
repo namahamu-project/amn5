@@ -25,5 +25,11 @@ document.addEventListener('scroll', () => {
 const moveTo = new MoveTo();
 moveTo.registerTrigger(trigger);
 
+const arrow = document.getElementsByClassName('about__arrow')[0];
+const target = document.getElementsByClassName('book--sikaitenka')[0];
+arrow.addEventListener('click', () => {
+  moveTo.move(target);
+});
+
 /* aos */
 AOS.init();
