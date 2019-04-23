@@ -16,7 +16,7 @@ module.exports = {
   output: {
     filename: 'app.min.js',
     path: docs,
-    publicPath: '/'
+    publicPath: '/amn5/'
   },
   resolve: {
     modules: ['node_modules'],
