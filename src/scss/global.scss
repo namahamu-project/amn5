@@ -19,9 +19,6 @@ a {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 .text--bold {
   font-weight: 600;
   font-family: 'TsukuGoPro-B', -apple-system, BlinkMacSystemFont,
@@ -30,6 +27,12 @@ h6,
 }
 
 .text--en {
+  font-family: 'FuturaLTPro-Medium', -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
+    'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+}
+
+.text--en--bold {
   font-family: 'FuturaLTPro-Heavy', -apple-system, BlinkMacSystemFont,
     'Helvetica Neue', '游ゴシック Medium', YuGothic, YuGothicM,
     'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
