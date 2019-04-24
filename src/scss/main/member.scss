@@ -7,7 +7,7 @@
   text-align: center;
 
   @include media-pc {
-    padding-bottom: 130px;
+    padding-bottom: 120px;
   }
 
   .member__nmhmlogo {
@@ -23,11 +23,13 @@
 
   .member__title {
     margin: 0 0 20px;
+    font-size: 1.6rem;
     color: $gray-color;
+    letter-spacing: 0.05rem;
   }
 
   .member__authors {
-    margin: 0 auto 130px;
+    margin: 0 auto 120px;
 
     @include media-pc {
       display: flex;
@@ -64,6 +66,7 @@
         margin: 10px 0 20px;
         color: $blue-color;
         font-size: 1.2rem;
+        letter-spacing: 0.03rem;
       }
 
       .content__sns {

@@ -65,7 +65,7 @@
 
   @include media-pc {
     margin-top: 0;
-    margin-left: 30px;
+    margin-left: 40px;
   }
 
   &.book-details--amn5 {
@@ -79,8 +79,8 @@
 
   .book-details__title {
     margin: 10px 0 0;
-    font-size: 4rem;
     letter-spacing: 0.5rem;
+    line-height: 1;
 
     &.book-details__title--amn5 > span {
       vertical-align: super;
@@ -88,8 +88,16 @@
     }
   }
 
+  .book-details__title--sikaitenka {
+    font-size: 4rem;
+  }
+
+  .book-details__title--amn5 {
+    font-size: 5rem;
+  }
+
   .book-details__subtitle {
-    margin: 5px 0 0;
+    margin: 10px 0 0;
     font-size: 1.5rem;
   }
 
@@ -99,7 +107,7 @@
     line-height: 1.75;
 
     .book-details__description__heading {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
       line-height: 1;
