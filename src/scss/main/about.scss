@@ -13,6 +13,14 @@
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.5;
+
+    > span {
+      display: block;
+
+      @include media-pc {
+        display: inline;
+      }
+    }
   }
 
   .about__arrow {
